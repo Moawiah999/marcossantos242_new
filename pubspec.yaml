@@ -1,0 +1,98 @@
+name: photogram
+description: Photogram, A Photo Sharing Network.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.0 <3.0.0"
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # localization
+  intl: ^0.17.0
+  flutter_localizations: 
+    sdk: flutter
+    version: ^0.0.0
+
+  # testing
+  test: ^1.17.12
+  integration_test: 
+    sdk: flutter
+    version: ^0.0.0
+
+  # app specific 
+  http: ^0.13.4
+  uuid: ^3.0.6
+  tuple: ^2.0.0
+  timeago: ^3.1.0
+  sprintf: ^6.0.0
+  cropperx: ^0.0.4
+  photo_view: ^0.13.0
+  flutter_svg: ^0.23.0+1
+  url_launcher: ^6.0.20
+  image_picker: ^0.8.4+4
+  path_provider: ^2.0.8
+  flare_flutter: ^3.0.2
+  simple_tooltip: ^1.0.0
+  carousel_slider: ^4.0.0
+  cupertino_icons: ^1.0.2
+  shared_preferences: ^2.0.13
+  font_awesome_flutter: ^9.2.0
+  cached_network_image: ^3.2.0
+  lazy_load_indexed_stack: ^0.1.2
+  scrollable_positioned_list: ^0.2.3
+  material_design_icons_flutter: ^5.0.6595
+  auto_size_text: ^3.0.0
+
+# to be used only in development mode
+dev_dependencies:
+  flutter_lints: ^1.0.0
+  flutter_launcher_icons:
+    git:
+      url: https://github.com/Davenchy/flutter_launcher_icons.git
+      ref: fixMinSdkParseFlutter2.8
+
+  flutter_test:
+    sdk: flutter
+
+
+# flutter assets
+flutter:
+
+  # code generation for localization
+  generate: true
+
+  uses-material-design: true
+
+  # main assets
+  assets:
+    - assets/png/
+    - assets/flare/
+    - assets/svg/
+    - assets/svg/bottom_nav/
+    - assets/ca/
+
+  # icons
+  fonts:
+    - family: HN
+      fonts:
+        - asset: assets/fonts/Helvetica-Neue/base.ttf
+        - asset: assets/fonts/Helvetica-Neue/base-italic.otf
+          style: italic
+          weight: 500
+        - asset: assets/fonts/Helvetica-Neue/zero.otf
+          weight: 300
+        - asset: assets/fonts/Helvetica-Neue/bold-italic.otf
+          style: italic
+          weight: 600
+        - asset: assets/fonts/Helvetica-Neue/bold-x2-italic.otf
+          style: italic
+          weight: 700
+        - asset: assets/fonts/Helvetica-Neue/bold-x3-italic.otf
+          style: italic
+          weight: 900
