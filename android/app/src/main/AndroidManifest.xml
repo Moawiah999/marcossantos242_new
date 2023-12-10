@@ -12,7 +12,7 @@
     </queries>
 
    <application
-        android:label="Spalhe"
+        android:label="Recco"
         android:name="${applicationName}"
         android:usesCleartextTraffic="true"
         android:icon="@mipmap/ic_launcher">

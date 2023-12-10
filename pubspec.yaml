@@ -48,6 +48,7 @@ dependencies:
   scrollable_positioned_list: ^0.2.3
   material_design_icons_flutter: ^5.0.6595
   auto_size_text: ^3.0.0
+  rename: ^3.0.1
 
 # to be used only in development mode
 dev_dependencies:
