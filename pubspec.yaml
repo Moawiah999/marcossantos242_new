@@ -53,14 +53,15 @@ dependencies:
 # to be used only in development mode
 dev_dependencies:
   flutter_lints: ^1.0.0
-  flutter_launcher_icons:
-    git:
-      url: https://github.com/Davenchy/flutter_launcher_icons.git
-      ref: fixMinSdkParseFlutter2.8
+  
 
   flutter_test:
     sdk: flutter
-
+  flutter_launcher_icons: ^0.11.0  
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/png/Spalhe.png"
 
 # flutter assets
 flutter:

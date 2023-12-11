@@ -42,7 +42,7 @@ class PgSplashScreen extends SplashScreen {
               color: ThemeBloc.colorScheme.onBackground,
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 30),
+              padding: const EdgeInsets.only(left: 2),
               child: Image.asset(
                 'assets/png/color_spalhe.png',
                 height: 9,

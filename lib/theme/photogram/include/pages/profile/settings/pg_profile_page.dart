@@ -185,6 +185,7 @@ class _PgProfilePageState extends State<PgProfilePage>
       color: Theme.of(context).cardColor,
       child: Stack(
         children: [
+          //
           Positioned(
             child: Opacity(
               opacity: 0.8,
@@ -192,7 +193,7 @@ class _PgProfilePageState extends State<PgProfilePage>
                 height: 130,
                 decoration: const BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage("assets/png/1662167201624.jpg"),
+                    image: AssetImage("assets/png/20231026_215128.jpg"),
                     fit: BoxFit.cover,
                   ),
                 ),

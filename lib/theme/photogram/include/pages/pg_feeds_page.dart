@@ -70,7 +70,7 @@ class _PgFeedsPageState extends State<PgFeedsPage> with AppActiveContentInfinite
                     color: ThemeBloc.colorScheme.onBackground,
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 30),
+                    padding: const EdgeInsets.only(left: 2),
                     child: Image.asset(
                       'assets/png/color_spalhe.png',
                       height: 5,
@@ -79,18 +79,18 @@ class _PgFeedsPageState extends State<PgFeedsPage> with AppActiveContentInfinite
                 ],
               ),
               const SizedBox(width: 10),
-              InkWell(
-                onTap: () {
-                  activeContent.themeBloc.pushEvent(
-                    ThemeEventToggleThemeMode(context, ThemeBloc.getThemeMode),
-                  );
-                },
-                child: SvgPicture.asset(
-                  'assets/svg/raio.svg',
-                  color: ThemeBloc.colorScheme.onBackground,
-                  height: 23,
-                ),
-              ),
+              // InkWell(
+              //   onTap: () {
+              //     activeContent.themeBloc.pushEvent(
+              //       ThemeEventToggleThemeMode(context, ThemeBloc.getThemeMode),
+              //     );
+              //   },
+              //   child: SvgPicture.asset(
+              //     'assets/svg/raio.svg',
+              //     color: ThemeBloc.colorScheme.onBackground,
+              //     height: 23,
+              //   ),
+              // ),
             ],
           ),
         ),
@@ -210,42 +210,42 @@ class _PgFeedsPageState extends State<PgFeedsPage> with AppActiveContentInfinite
           child: Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              InkWell(
-                onTap: () {
-                  launch('https://about.spalhe.com/doacao/pix.html');
-                },
-                child: Container(
-                  width: 60.0,
-                  height: 60.0,
-                  decoration: BoxDecoration(
-                    color: ThemeBloc.colorScheme.background,
-                    image: const DecorationImage(
-                      image: AssetImage('assets/png/doacao.png'),
-                      fit: BoxFit.cover,
-                    ),
-                    borderRadius: BorderRadius.all(Radius.circular(50.0)),
-                    border: Border.all(
-                      color: Color(0xff7833E8),
-                      width: 2.0,
-                    ),
-                  ),
-                ),
-              ),
+              // InkWell(
+              //   onTap: () {
+              //     launch('https://about.spalhe.com/doacao/pix.html');
+              //   },
+              //   child: Container(
+              //     width: 60.0,
+              //     height: 60.0,
+              //     decoration: BoxDecoration(
+              //       color: ThemeBloc.colorScheme.background,
+              //       image: const DecorationImage(
+              //         image: AssetImage('assets/png/doacao.png'),
+              //         fit: BoxFit.cover,
+              //       ),
+              //       borderRadius: BorderRadius.all(Radius.circular(50.0)),
+              //       border: Border.all(
+              //         color: Color(0xff7833E8),
+              //         width: 2.0,
+              //       ),
+              //     ),
+              //   ),
+              // ),
             ],
           ),
         ),
-        const SizedBox(height: 3),
-        Padding(
-          padding: const EdgeInsets.only(left: 20),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              ThemeBloc.textInterface.normalBlackH5Text(
-                text: 'Doação!',
-              )
-            ],
-          ),
-        ),
+        // const SizedBox(height: 3),
+        // Padding(
+        //   padding: const EdgeInsets.only(left: 20),
+        //   child: Row(
+        //     mainAxisAlignment: MainAxisAlignment.start,
+        //     children: [
+        //       ThemeBloc.textInterface.normalBlackH5Text(
+        //         text: 'Doação!',
+        //       )
+        //     ],
+        //   ),
+        // ),
         const SizedBox(height: 20),
       ],
     );
